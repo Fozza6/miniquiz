@@ -4,12 +4,20 @@
 right = ("Correct Answer")
 wrong = ("Incorrect Answer")
 
-
 print("Welcome to Fozza's Quiz!")
 
 playr = input("Would you like to play my quiz? ")
 if playr.lower() != "yes":
     quit()
+
+answer = input("\n does fozza smell? ")
+answer = "Yes" and "No"
+if answer.lower() == answer:
+    print(right)
+    score += 1
+else:
+    print(wrong)
+
 
 print("Great! Before we start what is your name?")
 name = input("What is your name? ")
@@ -18,7 +26,6 @@ print ("Hello, ",  name)
 print("\n Now that you have entered your name lets begin!")
 score = 0
 
-#Questions and Answers
 answer = input("\n What is my User name? ")
 if answer.lower() == "fozza":
     print(right)
@@ -33,5 +40,20 @@ if answer.lower() == "england":
 else:
     print(wrong)
 
-#Score
+answer = input("\n How many dogs do i have? ")
+if answer.lower() == "2":
+    print(right)
+    score += 1
+else:
+    print(wrong)
+
+answer = input("\n whats my most played game on Steam? ")
+answer = "GMOD" and "garrysmod"
+if answer.lower() == answer:
+    print(right)
+    score += 1
+else:
+    print(wrong)
+
+
 print("\n You got " + str(score) + " Questions correct!")
